@@ -1,0 +1,156 @@
+
+
+.basic-text{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1110px;
+    padding: 0 165px 0 165px;
+}
+
+
+/*------------------------header-------------------------*/
+
+.svg_in_mobile{
+    display: none;
+}
+
+.first_logo{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    margin-top: 0;
+    color: #333333;
+}
+
+.header{
+    display: flex;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    height: 24px;
+}
+
+.first_in_header{
+    display: flex;
+    gap: 5px;
+    margin-right: 286px;
+}
+
+.second_in_header{
+    display: flex;
+    gap: 49px;
+    margin-right: 60px;
+}
+
+.svg_in_header{
+    display: flex;
+    gap: 30px;
+}
+
+.a_in_header{
+    color: #4C5866;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        padding: 0 35px 0 35px;
+    }
+
+    .header{
+        margin-top: 11px;
+        display: grid;
+        grid-template-columns: repeat(2);
+        grid-template-rows: repeat(2, 23px);
+        row-gap: 20px;
+        margin-bottom: 60px;
+        height: 106px;
+    }
+
+    .first_in_header{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .second_in_header{
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .svg_in_header{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .second_in_header{
+        width: 768px;
+        gap: 0px
+    }
+
+    .s{
+        margin-right: 107px;
+    }
+}
+
+@media (max-width: 320px){
+    .container{
+        padding: 0 15px 0 15px;
+    }
+
+    .header{
+        margin-top: 11px;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2);
+        width: 320px;
+    }
+
+    .second_in_header{
+        display: none;
+    }
+
+    .svg_in_mobile{
+        display: inline;
+        margin-right: 152px;
+    }
+
+    .first_in_header{
+        grid-row: 1 / 2;
+    }
+
+    .svg_in_header{
+        grid-row: 2 / 3;
+        grid-column: 1/2;
+    } 
+
+    .img_in_main{
+        display: none;
+    }
+
+}
+
+
+/* -----------------------------main----------------------*/
+/*.bumaga_h1{
+    font-size: 60px;
+    color: #4C5866;
+    margin-bottom: 30px;
+}
+
+.bumaga{
+    color: #4C5866;
+    margin-bottom: 30px;
+}
+
+.first_botton{
+    color: #7875FE;
+    font-size: 20px;
+    border-color: #7875FE;
+    width: 255px;
+    height: 70px;
+    background-color: #FFFFFF;
+} */

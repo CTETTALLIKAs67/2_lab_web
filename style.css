@@ -107,6 +107,7 @@ a{
         grid-template-columns: none;
         grid-template-rows: repeat(2);
         width: 320px;
+        margin-bottom: 49px;
     }
 
     .second_in_header{
@@ -120,11 +121,12 @@ a{
 
     .first_in_header{
         grid-row: 1 / 2;
+        margin-left: 60px;
     }
 
     .svg_in_header{
         grid-row: 2 / 3;
-        grid-column: 1/2;
+        grid-column: 1 / 2;
     } 
 
     .img_in_main{
@@ -135,15 +137,27 @@ a{
 
 
 /* -----------------------------main----------------------*/
-/*.bumaga_h1{
-    font-size: 60px;
+.first_in_main{
+    display: grid;
+    grid-template-columns: repeat(2);
+    margin-top: 59px;
+}
+
+
+.bumaga_h1{
     color: #4C5866;
     margin-bottom: 30px;
+    width: 444px;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 70px;
 }
 
 .bumaga{
     color: #4C5866;
     margin-bottom: 30px;
+    width: 444px;
+    font-size: 18px;
 }
 
 .first_botton{
@@ -153,4 +167,55 @@ a{
     width: 255px;
     height: 70px;
     background-color: #FFFFFF;
-} */
+}
+
+.img_in_first_section{
+    width: 540px;
+    height: 560px;
+    object-fit: cover;
+    object-position: top;
+    grid-column: 2 / 3;
+}
+
+@media (max-width: 768px){
+    .bumaga_h1{
+        font-size: 50px;
+        width: 390px;
+        margin-top: 0;
+    }
+
+    .bumaga{
+        width: 390px;
+    }
+
+    .img_in_first_section{
+        width: 270px;
+        height: 410px;
+    }
+}
+
+@media (max-width: 320px){
+    .img_in_first_section{
+        display: none;
+    }
+
+    .first_in_main{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .bumaga_h1{
+        width: 221px;
+        font-size: 30px;
+    }
+
+    .bumaga{
+        width: 289px;
+        color: #85859B;
+    }
+
+    .first_botton{
+        width: 144px;
+        height: 50px;
+    }
+}

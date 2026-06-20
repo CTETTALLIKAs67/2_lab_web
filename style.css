@@ -165,7 +165,14 @@ a{
     width: 255px;
     height: 70px;
     background-color: #FFFFFF;
+    transition: transform 0.3s ease;
 }
+
+.first_botton:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 
 .img_in_first_section{
     width: 540px;
@@ -468,6 +475,15 @@ a{
     padding: 90px 165px 90px 165px;
 }
 
+.l{
+    transition: transform 0.3s ease;
+}
+
+.l:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 .f_logo{
     padding: 34px 29px 46px 29px;
     border: 1px solid #6F7072;
@@ -562,6 +578,12 @@ a{
     padding: 23.5px 94.5px;
     color: #7875FE;
     border-color: #7875FE;
+    transition: transform 0.3s ease;
+}
+
+.button_in_last_section:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .last_img{
